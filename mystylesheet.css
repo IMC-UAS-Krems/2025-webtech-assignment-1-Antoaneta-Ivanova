@@ -1,0 +1,235 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/*Body*/
+body {
+    background-color: #F4BBD3;
+}
+
+/*My Home Page*/
+/*Header*/
+
+/*Title*/
+
+header {
+    background-color: #ff48a0d7;
+    border: solid 1px #ff48a0d7;
+}
+#myname {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 450%;
+    font-weight: 10;
+    color: purple;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 80px;
+    text-shadow: 2px 2px 4px rgb(141, 69, 141) /*text shadow: https://www.w3schools.com/css/css_text_shadow.asp*/
+}
+
+/*Navigation*/
+
+nav {
+    text-align: center;
+}
+
+.navhead {
+    padding: 0 4%;
+    margin: 0 2%;
+    text-decoration: none;
+    font-size: 150%;
+    border-bottom: solid purple;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 1px  purple; 
+}
+a:hover {
+    color: #7B2FF7;
+}
+
+
+/*Index: text and image*/
+#index {
+    display:flex;
+    padding-top: 5%;
+}
+/*Index: figure*/
+#indeximage {
+    width: 40%;
+}
+/*Index: image*/
+#indeximage img{
+    width:100%;
+    border-radius: 20px;
+}
+/*Index: text*/
+#indexarticle {
+    width: 60%;
+    padding: 20px;
+    font-size: 120%;
+}
+
+.threewords {
+    display:inline-block;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: purple
+}
+
+#student {
+    padding-right: 0.5%;
+}
+#creative {
+    border-left: 2px solid purple;
+    border-right: 2px solid purple;
+    padding: 0 1%;
+}
+
+#driven {
+    padding-left: 0.5%;
+}
+
+.indexparagraphs{ 
+    line-height: 150%;
+}
+
+
+
+/*Footer*/
+footer {
+    background-color: #ff48a0d7;
+    text-align: right;
+    padding: 50px;
+    margin-top: 200px;
+}
+.navfoot {
+    padding: 5px 8px;
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 2px 1px  purple;
+}
+
+
+
+
+/*My About Page*/
+
+#about {
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 450%;
+    font-weight: 10;
+    color: purple;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 80px;
+    text-shadow: 2px 2px 4px rgb(141, 69, 141) /*text shadow: https://www.w3schools.com/css/css_text_shadow.asp*/
+}
+#aboutjourney {
+    text-align: center;
+}
+
+/*Images of different countries*/
+.countriespics {
+    display: flex;
+    font-size: 150%;
+    color:purple;
+}
+
+.countriespics img {
+    width: 100%;
+    height: 90%;
+    box-shadow: 10px 10px purple; /*box-shadow: https://www.w3schools.com/csS/css3_shadows_box.asp*/
+    margin-bottom: 5%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease; /*https://cloudinary.com/guides/front-end-development/change-image-on-hover-with-html-and-css*/
+
+}
+.countriespics img:hover{
+    color: purple;
+    transform: scale(1.05);
+}
+
+/*Journey Texts*/
+.journeytexts {
+    font-size: 20px;
+    line-height: 35px;
+    padding: 20px;
+    border: solid 1px #ffebd7d8;
+    border-radius: 20px;
+    background: #fff6eed8;
+    margin:30px;
+    text-align: center;
+}
+
+#southafricapics {
+    display: flex;
+    justify-content: center;   
+}
+
+#southafricapics img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+#swisspics {
+    display: flex;
+    justify-content: center;   
+}
+
+#swisspics img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+#austriapics {
+    display: flex;
+    justify-content: center;   
+}
+
+#austriapics img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+
+.headings {
+    border-bottom: solid 3px purple;
+    padding: 10px 0;
+    color: purple;
+    text-shadow: 2px 2px rgb(161, 99, 161);
+}
+
+/*gifs*/
+#gifs  {
+  display: inline-flex;
+  justify-content: center;
+}
+
+#gifs img {
+  width: 100%;     
+  height: auto;
+  border-radius: 10px;
+}
+
+.gifcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#funfacts {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+section {
+    margin: 100px 0;
+}
+
+
