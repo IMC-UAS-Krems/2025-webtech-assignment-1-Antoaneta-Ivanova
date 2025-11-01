@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antoaneta Ivanova">
+    <meta name="description" content="This is my welcome page that introduces myself">
+    <meta name="keywords" content="welcome page">
+    <title>Antoaneta Ivanova</title>
+    <link rel="stylesheet" href="mystylesheet.css">
+
+<body>
+    <header>
+        <h1 class="mainheadings">Contact</h1>
+        <nav>
+            <a class="navhead" href="index.html" target="_blank">🏠Home</a>
+            <a class="navhead" href="about.html" target="_blank">✨About</a>
+            <a class="navhead" href="cv.html" target="_blank">📄CV</a>
+            <a class="navhead" href="gallery.html" target="_blank">🖼️Gallery</a>
+            <a class="navhead" href="contact.html" target="_blank">📞Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact">
+            <h1 id="heading">Get in contact with me!</h1>
+            <form action="">
+                <div class="input">
+                    <label for="fname" class="label"><b>First Name:</b></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Enter your name..." class="inputbox"
+                        required>
+                </div>
+
+                <div class="input">
+                    <label for="lname" class="label"><b>Last Name:</b></label>
+                    <input type="text" id="lname" name="lastname" placeholder="Enter your last name.." class="inputbox"
+                        required>
+                </div>
+
+                <div class="input">
+                    <label for="gender" class="label"><b>Gender:</b></label>
+                    <select id="gender" name="gender" class="inputbox">
+                        <option value="" selected disabled><i>select</i></option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <!--Select: https://www.w3schools.com/tags/tag_select.asp-->
+                </div>
+
+                <div class="input">
+                    <label for="email" class="label"><b>Email:</b></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email.." class="inputbox"
+                        required>
+                </div>
+
+                <div class="input">
+                    <label for="message" class="label"><b>Message:</b></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write me something.."
+                        required></textarea>
+                </div>
+
+                <div class="input">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+                <!--Form: https://www.w3schools.com/tags/tag_input.as-->
+            </form>
+        </div>
+    </main>
+
+    <footer>
+
+        <div style="color:purple; font-size: 20px; line-height: 30px;">
+            <p style="font-family:Arial, Helvetica, sans-serif;">
+                <b>Contact:</b> <br> 📞 +43 12 356 6789 <br> 📧 2025imc10124@fh-krems.ac.at
+            </p>
+            <p>
+                <b>&#169 2025 Antoaneta. All rights reserved.</b>
+            </p> <!--https://www.geeksforgeeks.org/html/how-to-add-copyright-symbol-to-your-html-document/-->
+        </div>
+
+        <nav style="text-align: center;">
+            <a class="navfoot" href="index.html">HOME</a>
+            <a class="navfoot" href="about.html">ABOUT</a>
+            <a class="navfoot" href="cv.html">CV</a>
+            <a class="navfoot" href="gallery.html">GALLERY</a>
+            <a class="navfoot" href="contact.html">CONTACT</a>
+        </nav>
+
+    </footer>
+</body>
+
+</html>
