@@ -4,23 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
     <meta name="author" content="Antoaneta Ivanova">
-    <meta name="description" content="This is my welcome page that introduces myself">
-    <meta name="keywords" content="welcome page">
-    <title>Antoaneta Ivanova</title>
+    <meta name="description" content="This is my CV page of my website about Antoaneta Ivanova that also includes my welcome page, my about, gallery and contact webapges.">
+    <meta name="keywords" content="cv, education, work, job-shadowing, technical skills, soft skills, programming, certifications.">
+    <title>My CV</title>
     <link rel="stylesheet" href="mystylesheet.css">
     <style>
         a {
             text-decoration: none;
         }
-        a:hover{
+        #cvnav a:hover{
             color: rgb(255, 102, 128);
             text-align: underline;
         }
         a:unvisited{
             text-decoration: none;
         }
-        #firsth1 {
+        .topics {
             text-align: center;
             border: solid 2px rgb(255, 157, 255);
             background-color: rgb(255, 157, 255);
@@ -31,7 +32,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="mainheadingscolor">
         <h1 class="mainheadings">Curriculum <br>Vitae</h1>
         <nav>
             <a class="navhead" href="index.html" target="_blank">🏠Home</a>
@@ -44,7 +45,7 @@
 
     <main>
         <section>
-            <h1 id="firsth1">Personal Profile</h1>
+            <h1 class="topics">Personal Profile</h1>
             <article id="cvtextpic">
                 <figure id="profilepic">
                     <img src="images/cvpic.jpg" alt="">
@@ -72,8 +73,9 @@
                 </div>
             </article>
         </section>
+        <br>
         <section id="softskills">
-            <h1>🔧Soft Skills</h1>
+            <h1 class="topics">🔧Soft Skills</h1>
             <article>
                 <div>
                     <ul>
@@ -88,8 +90,9 @@
                 </div>
             </article>
         </section>
+        <br>
         <section id="techskills">
-            <h1>👩‍💻Basic-level Technical Skills</h1>
+            <h1 class="topics">👩‍💻Basic-level Technical Skills</h1>
             <article>
                 <div>
                     <ul>
@@ -102,8 +105,9 @@
                 </div>
             </article>
         </section>
+        <br>
         <section id="education">
-            <h1>🎓Education</h1>
+            <h1 class="topics">🎓Education</h1>
             <article>
                 <div>
                     <ul>
@@ -115,12 +119,13 @@
                 </div>
             </article>
         </section>
+        <br>
         <section id="work">
-            <h1>💼Job-Shadowing & Work Experience</h1>
+            <h1 class="topics">💼Job-Shadowing & Work Experience</h1>
             <article>
                 <div>
                     <ul>
-                        <li>Au pairing for 6 months in Switzerland (2025)</li>
+                        <li>Au pairing for 6 months in Switzerland (2025) ~ <a href="about.html#SWISStext" target="_blank"><span><i>read more about my experience</i></span></a></li>
                         <li>Mediclinic Morningside Hospital Job-Shadow (2024): Gained insight on the importance of
                             woman's
                             health in the Gynecology Department</li>
@@ -131,8 +136,9 @@
                 </div>
             </article>
         </section>
+        <br>
         <section id="certifications">
-            <h1>🏆Certifications</h1>
+            <h1 class="topics">🏆Certifications</h1>
             <article>
                 <div>
                     <ul>
@@ -144,6 +150,7 @@
                 </div>
             </article>
         </section>
+        <br>
     </main>
 
     <footer>

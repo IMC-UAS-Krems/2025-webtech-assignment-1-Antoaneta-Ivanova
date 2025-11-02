@@ -1,85 +1,88 @@
+/*All Pages*/
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-
-/*Body*/
 body {
     background-color: #F4BBD3;
 }
 
-/*My Home Page*/
-/*Header*/
-
-/*Title*/
-
-header {
-    background-color: #ff48a0d7;
-    border: solid 1px #ff48a0d7;
-}
-#myname {
+.mainheadings {
     font-family: "Lucida Handwriting", cursive;
-    font-size: 450%;
-    font-weight: 10;
-    color: purple;
+    font-size: 350%;
+    color: #5720bd;
     text-align: center;
-    padding-top: 10px;
-    line-height: 80px;
-    text-shadow: 2px 2px 4px rgb(141, 69, 141) /*text shadow: https://www.w3schools.com/css/css_text_shadow.asp*/
+    line-height: 70px;
+    text-shadow: 2px 2px 2px white;
+    /*text shadow: https://www.w3schools.com/css/css_text_shadow.asp*/
 }
 
-/*Navigation*/
+.mainheadingscolor {
+    border: solid 2px #ff48a0d7;
+    background: linear-gradient(to bottom, #c155ff, #ff48a0d7);
+    /*https://www.w3schools.com/css/css3_gradients.asp*/
+}
 
 nav {
     text-align: center;
 }
 
 .navhead {
-    padding: 0 4%;
+    padding: 3px 50px;
     margin: 0 2%;
     text-decoration: none;
     font-size: 150%;
     border-bottom: solid purple;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    text-shadow: 2px 1px  purple; 
+    text-shadow: 1px 1px purple;
 }
+
 a:hover {
     color: #7B2FF7;
 }
 
 
-/*Index: text and image*/
+/*Home Page:*/
+/*section*/
 #index {
-    display:flex;
-    padding-top: 5%;
+    display: flex;
+    padding: 20px 20px;
 }
-/*Index: figure*/
+
+/*Figure*/
 #indeximage {
     width: 40%;
 }
-/*Index: image*/
-#indeximage img{
-    width:100%;
-    border-radius: 20px;
-}
-/*Index: text*/
-#indexarticle {
-    width: 60%;
-    padding: 20px;
-    font-size: 120%;
+
+/*Image*/
+#indeximage img {
+    width: 100%;
+    border-radius: 10px;
+    margin-left: 10px;
+    box-shadow: 5px 5px purple;
+    /*box shadow: https://www.w3schools.com/css/css3_shadows_box.asp*/
 }
 
+/*Text*/
+#indexarticle {
+    width: 60%;
+    padding-right: 25px;
+    font-size: 130%;
+}
+
+/*3 words under Welcome*/
 .threewords {
-    display:inline-block;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: purple
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: purple;
 }
 
 #student {
     padding-right: 0.5%;
 }
+
 #creative {
     border-left: 2px solid purple;
     border-right: 2px solid purple;
@@ -90,27 +93,9 @@ a:hover {
     padding-left: 0.5%;
 }
 
-.indexparagraphs{ 
+/*Paragraphs*/
+.indexparagraphs {
     line-height: 150%;
-}
-
-
-
-/*Footer*/
-footer {
-    background-color: #ff48a0d7;
-    text-align: right;
-    padding: 50px;
-    margin-top: 200px;
-}
-.navfoot {
-    padding: 5px 8px;
-    margin: 0px 10px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    text-shadow: 2px 1px  purple;
 }
 
 
@@ -118,16 +103,7 @@ footer {
 
 /*My About Page*/
 
-#about {
-    font-family: "Lucida Handwriting", cursive;
-    font-size: 450%;
-    font-weight: 10;
-    color: purple;
-    text-align: center;
-    padding-top: 10px;
-    line-height: 80px;
-    text-shadow: 2px 2px 4px rgb(141, 69, 141) /*text shadow: https://www.w3schools.com/css/css_text_shadow.asp*/
-}
+/*Journey heading*/
 #aboutjourney {
     text-align: center;
 }
@@ -136,20 +112,23 @@ footer {
 .countriespics {
     display: flex;
     font-size: 150%;
-    color:purple;
+    color: purple;
 }
 
 .countriespics img {
     width: 100%;
     height: 90%;
-    box-shadow: 10px 10px purple; /*box-shadow: https://www.w3schools.com/csS/css3_shadows_box.asp*/
+    box-shadow: 10px 10px purple;
+    /*box-shadow: https://www.w3schools.com/csS/css3_shadows_box.asp*/
     margin-bottom: 5%;
     display: block;
     border-radius: 10px;
-    transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease; /*https://cloudinary.com/guides/front-end-development/change-image-on-hover-with-html-and-css*/
+    transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+    /*https://cloudinary.com/guides/front-end-development/change-image-on-hover-with-html-and-css*/
 
 }
-.countriespics img:hover{
+
+.countriespics img:hover {
     color: purple;
     transform: scale(1.05);
 }
@@ -160,60 +139,64 @@ footer {
     line-height: 35px;
     padding: 20px;
     border: solid 1px #ffebd7d8;
-    border-radius: 20px;
-    background: #fff6eed8;
-    margin:30px;
+    margin-top: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
+    background: white;
     text-align: center;
 }
 
+/*Pictures from each country*/
 #southafricapics {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
 }
 
 #southafricapics img {
-    width: 350px;
+    width: 250px;
     border-radius: 10px;
 }
 
 #swisspics {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
 }
 
 #swisspics img {
-    width: 350px;
+    width: 250px;
     border-radius: 10px;
 }
 
 #austriapics {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
 }
 
 #austriapics img {
-    width: 350px;
+    width: 250px;
     border-radius: 10px;
 }
 
-
+/*Headings for each paragraph section*/
 .headings {
     border-bottom: solid 3px purple;
     padding: 10px 0;
     color: purple;
     text-shadow: 2px 2px rgb(161, 99, 161);
+    text-align: center;
 }
 
 /*gifs*/
-#gifs  {
-  display: inline-flex;
-  justify-content: center;
+#gifs {
+    display: inline-flex;
+    justify-content: center;
 }
 
 #gifs img {
-  width: 100%;     
-  height: auto;
-  border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .gifcaption {
@@ -228,8 +211,152 @@ footer {
     line-height: 35px;
 }
 
-section {
-    margin: 100px 0;
+
+
+/*CV*/
+
+
+main {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: solid 1px white;
+    background-color: white;
+    margin: 50px 100px;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+
+#cvnav li {
+    text-align: left;
+}
+
+article div {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#cvtextpic {
+    display: flex;
+}
+
+#profilepic img {
+    height: 400px;
+    width: auto;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 
+
+/*Gallery*/
+main {
+    text-align: center;
+}
+
+#quote {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+#gallery {
+    border: solid 10px white;
+    background-color: white;
+}
+
+
+
+/*Contact*/
+
+#contactheading {
+    text-align: center;
+    border: solid 2px rgb(255, 157, 255);
+    background-color: rgb(255, 157, 255);
+    border-radius: 5px;
+    padding: 20px 0px;
+}
+/*Entire form*/
+.contact {
+    border: solid 1px white;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/*Each division: Label with input*/
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin-left: 10%;
+    text-align: left;
+}
+/*Label Heading*/
+.label {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px 0;
+    color: purple;
+    text-align: left;
+}
+/*User Input Container*/
+.inputbox {
+    font-size: 20px;
+    width: 90%;
+    border: solid 2px purple;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+}
+
+/*Focus effect: https://stackoverflow.com/questions/76020486/how-do-i-add-a-highlight-color-to-the-form-input-fields-in-html*/
+.inputbox:focus {
+    background-color: rgb(247, 177, 247);
+    box-shadow: 0 0 10px purple;
+    outline: solid 1px purple;
+}
+/*Message Container*/
+#message {
+    resize: none;
+    font-size: 20px;
+    width: 90%;
+    border: solid 2px purple;
+    border-radius: 5px;
+    padding: 10px;
+}
+#message:focus {
+    background-color: rgb(247, 177, 247);
+    box-shadow: 0 0 10px purple;
+    outline: solid 2px purple;
+}
+/*Submit Button*/
+#submit {
+    background-color: rgb(235, 149, 235);
+    margin-bottom: 5%;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 50px;
+    border: solid 3px purple;
+    color: purple;
+}
+#submit:hover {
+    background-color: #aa76fd;
+    transform: scale(1.05);
+}
+
+/*Footer*/
+footer {
+    background-color: #ff48a0d7;
+    text-align: right;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+.navfoot {
+    padding: 5px 8px;
+    margin: 0px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 1px 1px purple;
+}

@@ -5,20 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Antoaneta Ivanova">
-    <meta name="description" content="This is my webpage acout me">
-    <meta name="keywords" content="about me">
-    <title>Antoaneta Ivanova</title>
+    <meta name="description" content="This is my about me page of my website about Antoaneta Ivanova that also includes my welcome page, CV, gallery and contact webapges.">
+    <meta name="keywords" content="about me, journey, south africa, switzerland, austria, au pair, informatics, student, hobbies, interests">
+    <title>About</title>
     <link rel="stylesheet" href="mystylesheet.css">
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        .subtitles {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 20px 0px;
+            text-align: center;
+            border: solid 2px rgb(255, 157, 255);
+            background-color: #c155ff;
+            border-radius: 5px;
+            margin: 40px 30px;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1 id="about">About</h1>
+    <header class="mainheadingscolor">
+        <h1 class="mainheadings">About</h1>
         <nav>
             <a class="navhead" href="index.html" target="_blank">🏠Home</a>
             <a class="navhead" href="about.html" target="_blank">✨About</a>
@@ -26,15 +36,11 @@
             <a class="navhead" href="gallery.html" target="_blank">🖼️Gallery</a>
             <a class="navhead" href="contact.html" target="_blank">📞Contact</a>
         </nav>
-
-        <style>
-
-        </style>
     </header>
 
     <body>
-        <section id="aboutjourney">
-            <h1 style="padding: 30px;">My Journey</h1>
+        <section class="journey">
+            <h1 class="subtitles">My Journey</h1>
 
             <div class="countriespics">
 
@@ -85,7 +91,7 @@
         </section>
 
         <section></section>
-        
+
         <section id="SWISStext" class="journeytexts">
             <h1 class="headings">My Work: <i>Switzerland</i></h1>
             <p>The 8th of March 2025. The first day of new chapter. I have always wondered about life beyond South
@@ -145,7 +151,18 @@
         </section>
 
         <section>
-            <h1 class="headings" style="padding:10px; font-size: 40px; margin:10px;">My Interests & Hobbies</h1>
+            <h1 class="subtitles" style="font-size: 40px;">Personal Information</h1>
+            <ul type="disc" id="funfacts">
+                <li><b>Name:</b> Antoaneta Ivanova</li>
+                <li><b>Age:</b> 19 years old</li>
+                <li><b>Birthday:</b> 03.02.2006</li>
+                <li><b>Nationality:</b> Bulgarian</li>
+                <li><b>Siblings:</b> 1 sister & 1 brother</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 class="subtitles" style="font-size: 40px;">My Interests & Hobbies</h1>
             <div id="gifs">
                 <figure>
                     <img src="images/movie.gif" alternative="GIF of watching movies" type="gif">
@@ -165,11 +182,11 @@
         </section>
 
         <aside>
-            <h1 class="headings" style="padding:10px; font-size: 40px; margin:10px;">Fun Facts</h1>
+            <h1 class="subtitles" style="font-size: 40px;">Fun Facts</h1>
             <ul type="disc" id="funfacts">
                 <li>I have never experienced snow in real life</li>
                 <li>I have can't drive eventhough I have a license</li>
-                <li>I am afraid of cats</li>
+                <li>I am affraid of cats</li>
             </ul>
         </aside>
 
@@ -185,11 +202,12 @@
             </div>
 
             <nav style="text-align: center;">
-                <a class="navfoot" href="index.html">HOME</a>
-                <a class="navfoot" href="about.html">ABOUT</a>
-                <a class="navfoot" href="cv.html">CV</a>
-                <a class="navfoot" href="gallery.html">GALLERY</a>
-                <a class="navfoot" href="contact.html">CONTACT</a>
+                <a class="navfoot" href="index.html" target="_blank">HOME</a>
+                <a class="navfoot" href="about.html" target="_blank">ABOUT</a>
+                <a class="navfoot" href="cv.html" target="_blank">CV</a>
+                <a class="navfoot" href="gallery.html" target="_blank">GALLERY</a>
+                <a class="navfoot" href="contact.html" target="_blank">CONTACT</a>
+            </nav>
             </nav>
 
         </footer>
