@@ -10,12 +10,19 @@ body {
 
 .mainheadings {
     font-family: "Lucida Handwriting", cursive;
-    font-size: 350%;
+    font-size: 4rem;
     color: #5720bd;
     text-align: center;
-    line-height: 70px;
-    text-shadow: 2px 2px 2px white;
+    line-height: 5rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem white;
     /*text shadow: https://www.w3schools.com/css/css_text_shadow.asp*/
+}
+
+@media (max-width: 48rem) {
+    .mainheadings {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
 }
 
 .mainheadingscolor {
@@ -24,19 +31,40 @@ body {
     /*https://www.w3schools.com/css/css3_gradients.asp*/
 }
 
-nav {
-    text-align: center;
+/*Entire Navigation*/
+.navtop {
+    justify-content: center;
+    display: flex;
 }
 
+@media (max-width: 48rem) {
+    .navtop {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/*Each link*/
 .navhead {
-    padding: 3px 50px;
-    margin: 0 2%;
+    padding: 0.2rem 3rem;
+    margin: 0rem 2rem;
     text-decoration: none;
     font-size: 150%;
-    border-bottom: solid purple;
+    border-bottom: solid 0.2rem purple;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-shadow: 1px 1px purple;
+}
+
+@media (max-width: 48rem) {
+    .navhead {
+        font-size: 01rem;
+        line-height: 2rem;
+        padding: 0 1rem;
+        margin: 0 1rem;
+        border-bottom: none;
+        text-align: center;
+    }
 }
 
 a:hover {
@@ -44,32 +72,75 @@ a:hover {
 }
 
 
+
+
+
 /*Home Page:*/
-/*section*/
+/*white background*/
+.whitesquare {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: solid 1px white;
+    background-color: white;
+    margin: 4rem 4rem;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+@media (max-width: 48rem) {
+    .whitesquare {
+        margin: 2rem 1rem;
+        padding: 1rem 1rem;
+    }
+}
+
+/*Entire section*/
 #index {
     display: flex;
-    padding: 20px 20px;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+
+@media (max-width: 48rem) {
+    #index {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 /*Figure*/
 #indeximage {
-    width: 40%;
+    width: 100%;
+    height: auto;
 }
 
 /*Image*/
 #indeximage img {
     width: 100%;
-    border-radius: 10px;
-    margin-left: 10px;
-    box-shadow: 5px 5px purple;
+    border-radius: 1rem;
+    box-shadow: 0.4rem 0.4rem purple;
     /*box shadow: https://www.w3schools.com/css/css3_shadows_box.asp*/
+}
+
+@media (max-width: 48rem) {
+    #indeximage img {
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0.2rem 0.2rem purple;
+        justify-content: center;
+    }
 }
 
 /*Text*/
 #indexarticle {
-    width: 60%;
-    padding-right: 25px;
-    font-size: 130%;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 48rem) {
+    #indexarticle {
+        text-align: center;
+        font-size: 1rem;
+    }
 }
 
 /*3 words under Welcome*/
@@ -93,6 +164,16 @@ a:hover {
     padding-left: 0.5%;
 }
 
+@media (max-width: 48rem) {
+
+    #student,
+    #creative,
+    #driven {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
 /*Paragraphs*/
 .indexparagraphs {
     line-height: 150%;
@@ -101,56 +182,112 @@ a:hover {
 
 
 
-/*My About Page*/
 
-/*Journey heading*/
-#aboutjourney {
+/*My About Page--------------------------------------------------------------------------------------------------------------------------------*/
+
+/*All the subheadings of the webpage*/
+.subheadings {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 1rem 1rem;
     text-align: center;
+    border: solid 0.1rem #c155ff;
+    background-color: #c155ff;
+    border-radius: 0.5rem;
+    margin: 3rem 2rem;
 }
 
-/*Images of different countries*/
+@media (max-width:48rem) {
+    .subheadings {
+        padding: 0.5rem 0.5rem;
+        text-align: center;
+        margin: 1rem 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+/*Section about Journey*/
+/*Images of different 3 countries*/
 .countriespics {
     display: flex;
-    font-size: 150%;
+    font-size: 1.8rem;
     color: purple;
+    justify-content: center;
+}
+
+@media (max-width:48rem) {
+    .countriespics {
+        flex-direction: column;
+        font-size: 1.2rem;
+        text-align: right;
+    }
+
 }
 
 .countriespics img {
     width: 100%;
     height: 90%;
-    box-shadow: 10px 10px purple;
+    box-shadow: 0.4rem 0.4rem purple;
     /*box-shadow: https://www.w3schools.com/csS/css3_shadows_box.asp*/
-    margin-bottom: 5%;
     display: block;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
     /*https://cloudinary.com/guides/front-end-development/change-image-on-hover-with-html-and-css*/
-
 }
 
-.countriespics img:hover {
-    color: purple;
-    transform: scale(1.05);
+@media (max-width:48rem) {
+    .countriespics img {
+        width: 50%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5rem;
+    }
+}
+
+.countrytext {
+    text-align: center;
+    padding-top: 1rem;
 }
 
 /*Journey Texts*/
 .journeytexts {
-    font-size: 20px;
-    line-height: 35px;
-    padding: 20px;
-    border: solid 1px #ffebd7d8;
-    margin-top: 80px;
-    margin-left: 150px;
-    margin-right: 150px;
-    border-radius: 10px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 0.5rem 4rem;
+    border: solid 0.2rem purple;
+    margin: 4rem 10rem;
+    border-radius: 0.5rem;
     background: white;
     text-align: center;
 }
 
+@media (max-width:48rem) {
+    .journeytexts {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        padding: 0.3rem 3rem;
+        margin: 1rem 2rem;
+        background: white;
+        text-align: center;
+    }
+}
+
+
 /*Pictures from each country*/
-#southafricapics {
+#southafricapics,
+#swisspics,
+#austriapics {
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 48rem) {
+
+    #southafricapics,
+    #swisspics,
+    #austriapics {
+        flex-direction: column;
+    }
 }
 
 #southafricapics img {
@@ -158,19 +295,9 @@ a:hover {
     border-radius: 10px;
 }
 
-#swisspics {
-    display: flex;
-    justify-content: center;
-}
-
 #swisspics img {
     width: 250px;
     border-radius: 10px;
-}
-
-#austriapics {
-    display: flex;
-    justify-content: center;
 }
 
 #austriapics img {
@@ -178,14 +305,7 @@ a:hover {
     border-radius: 10px;
 }
 
-/*Headings for each paragraph section*/
-.headings {
-    border-bottom: solid 3px purple;
-    padding: 10px 0;
-    color: purple;
-    text-shadow: 2px 2px rgb(161, 99, 161);
-    text-align: center;
-}
+
 
 /*gifs*/
 #gifs {
@@ -193,36 +313,71 @@ a:hover {
     justify-content: center;
 }
 
+@media (max-width: 48rem) {
+    #gifs {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 #gifs img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 .gifcaption {
     text-align: center;
-    font-style: italic;
-    font-size: 20px;
-    padding: 10px;
+    font-size: 1.5rem;
+    padding: 0 1rem;
 }
 
-#funfacts {
-    font-size: 20px;
-    line-height: 35px;
+@media (max-width: 48rem) {
+    .gifcaption {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+/*Sections of info: interests and hobbies, fun facts and personal info*/
+.otherinfo {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+@media (max-width: 48rem) {
+    .otherinfo {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-left: 3rem;
+    }
 }
 
 
 
-/*CV*/
 
 
-main {
+
+
+
+
+/*CV---------------------------------------------------------------------------------------*/
+
+/*Whiteblock background*/
+.whiteblock {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     border: solid 1px white;
     background-color: white;
-    margin: 50px 100px;
-    border-radius: 10px;
-    padding: 10px 30px;
+    margin: 4rem 4rem;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+@media (max-width: 48rem) {
+    .whiteblock {
+        margin: 2rem 1rem;
+        padding: 1rem 2rem;
+    }
 }
 
 #cvnav li {
@@ -230,36 +385,58 @@ main {
 }
 
 article div {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
 }
 
 #cvtextpic {
     display: flex;
+    justify-content: center;
+}
+@media (max-width: 48rem) {
+    #cvtextpic {
+    flex-direction: column;
+}
+}
+
+#textprofile {
+    max-width: 100%;
 }
 
 #profilepic img {
-    height: 400px;
-    width: auto;
-    border-radius: 10px;
-    margin-right: 10px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 1rem;
 }
 
 
 
 /*Gallery*/
-main {
-    text-align: center;
-}
 
 #quote {
     font-size: 30px;
     line-height: 50px;
+    text-align: center;
+}
+@media (max-width: 48rem) {
+    #quote {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
 }
 
 #gallery {
     border: solid 10px white;
     background-color: white;
+}
+
+.topics {
+    text-align: center;
+    border: solid 2px rgb(255, 157, 255);
+    background-color: rgb(255, 157, 255);
+    border-radius: 5px;
+    padding: 10px
 }
 
 
@@ -273,6 +450,7 @@ main {
     border-radius: 5px;
     padding: 20px 0px;
 }
+
 /*Entire form*/
 .contact {
     border: solid 1px white;
@@ -288,6 +466,7 @@ main {
     margin-left: 10%;
     text-align: left;
 }
+
 /*Label Heading*/
 .label {
     font-size: 25px;
@@ -296,6 +475,7 @@ main {
     color: purple;
     text-align: left;
 }
+
 /*User Input Container*/
 .inputbox {
     font-size: 20px;
@@ -312,6 +492,7 @@ main {
     box-shadow: 0 0 10px purple;
     outline: solid 1px purple;
 }
+
 /*Message Container*/
 #message {
     resize: none;
@@ -321,11 +502,13 @@ main {
     border-radius: 5px;
     padding: 10px;
 }
+
 #message:focus {
     background-color: rgb(247, 177, 247);
     box-shadow: 0 0 10px purple;
     outline: solid 2px purple;
 }
+
 /*Submit Button*/
 #submit {
     background-color: rgb(235, 149, 235);
@@ -338,6 +521,7 @@ main {
     border: solid 3px purple;
     color: purple;
 }
+
 #submit:hover {
     background-color: #aa76fd;
     transform: scale(1.05);
@@ -346,17 +530,39 @@ main {
 /*Footer*/
 footer {
     background-color: #ff48a0d7;
-    text-align: right;
-    padding: 50px;
-    margin-top: 100px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footertext {
+    color: purple;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+@media (max-width: 48rem) {
+    .footertext {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        padding-bottom: 1.5rem;
+    }
 }
 
 .navfoot {
-    padding: 5px 8px;
-    margin: 0px 10px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 3rem 1rem;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    text-shadow: 1px 1px purple;
+    text-shadow: 0.1rem 0.1rem purple;
+}
+
+@media (max-width: 48rem) {
+    .navfoot {
+        font-size: 1rem;
+        display: inline;
+        padding: 0 0.5rem;
+    }
 }
