@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="refresh" content="30">
     <meta name="author" content="Antoaneta Ivanova">
-    <meta name="description" content="This is my CV page of my website about Antoaneta Ivanova that also includes my welcome page, my about, gallery and contact webapges.">
-    <meta name="keywords" content="cv, education, work, job-shadowing, technical skills, soft skills, programming, certifications.">
+    <meta name="description"
+        content="This is my CV page of my website about Antoaneta Ivanova that also includes my welcome page, my about, gallery and contact webapges.">
+    <meta name="keywords"
+        content="cv, education, work, job-shadowing, technical skills, soft skills, programming, certifications.">
     <meta name="copyright" content="© 2025 Antoaneta">
     <title>My CV</title>
     <link rel="stylesheet" href="css/style.css">
@@ -15,13 +17,25 @@
         a {
             text-decoration: none;
         }
-        #cvnav a:hover{
+
+        #cvnav a:hover {
             color: rgb(255, 102, 128);
             text-align: underline;
         }
-        a:unvisited{
+
+        a:unvisited {
             text-decoration: none;
-            color:purple;
+            color: purple;
+        }
+        li {
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+        @media (max-width: 768px) {
+            li {
+            font-size: 1rem;
+            line-height: 2rem;
+        }
         }
     </style>
 </head>
@@ -47,14 +61,17 @@
                 </figure>
                 <div id="textprofile">
                     <h3>ANTOANETA IVANOVA</h3>
-                    A first-year student studying Informatics with a desire to improve myself and change the world for
-                    the
-                    better.
-                    Working hard everday to step closer to achieving these goals while growing and learning as a person.
-                    I
-                    am open to
-                    learning new topics and exploring new things that challenges my thinking and leads to personal
-                    growth.
+                    <p>A first-year student studying Informatics with a desire to improve myself and change the world
+                        for
+                        the
+                        better.
+                        Working hard everday to step closer to achieving these goals while growing and learning as a
+                        person.
+                        I
+                        am open to
+                        learning new topics and exploring new things that challenges my thinking and leads to personal
+                        growth.</p>
+
                     <h3>Content</h3>
                     <nav id="cvnav">
                         <ul>
@@ -120,7 +137,8 @@
             <article>
                 <div>
                     <ul>
-                        <li>Au pairing for 6 months in Switzerland (2025) ~ <a href="about.html#SWISStext" target="_blank"><span><i>read more about my experience</i></span></a></li>
+                        <li>Au pairing for 6 months in Switzerland (2025) ~ <a href="about.html#SWISStext"
+                                target="_blank"><span><i>read more about my experience</i></span></a></li>
                         <li>Mediclinic Morningside Hospital Job-Shadow (2024): Gained insight on the importance of
                             woman's
                             health in the Gynecology Department</li>
