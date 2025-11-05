@@ -85,7 +85,7 @@ a:hover {
 }
 @media (max-width: 768px) {
     .whitesquare {
-        margin: 2rem 1rem;
+        margin: 1rem 0.3rem;
         padding: 1rem 1rem;
     }
 }
@@ -119,9 +119,8 @@ a:hover {
 @media (max-width: 768px) {
     #indeximage img {
         width: 80%;
-        border-radius: 10px;
-        box-shadow: 0.2rem 0.2rem purple;
         justify-content: center;
+        margin: 0;
     }
 }
 
@@ -160,7 +159,7 @@ a:hover {
     #creative,
     #driven {
         font-size: 0.7rem;
-        padding: 0 rem;
+        padding: 0.1rem;
         border-bottom:1px;
     }
 }
@@ -207,16 +206,17 @@ audio {
 /*Images of different 3 countries*/
 .countriespics {
     display: flex;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: purple;
     justify-content: center;
     align-items: center;
 }
-@media (max-width:768px) {
+@media (max-width:425px) {
     .countriespics {
         flex-direction:column;
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         justify-content: center;
+        margin: 0;
     }
 }
 .countriespics img {
@@ -233,7 +233,7 @@ audio {
     .countriespics img {
         width: 90%;
         height: auto;
-        margin: 1rem;
+        margin: 0rem;
     }
 }
 
@@ -281,7 +281,7 @@ audio {
     display: flex;
     justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     #southafricapics,
     #swisspics,
     #austriapics {
@@ -296,6 +296,7 @@ audio {
 #southafricapics img {
     width: 160px;
     justify-content: center;
+    margin: 0rem;
 }
 }
 
@@ -307,6 +308,7 @@ audio {
 #swisspics img {
     width: 160px;
     justify-content: center;
+    margin: 0rem;
 }
 }
 #austriapics img {
@@ -317,6 +319,7 @@ audio {
 #austriapics img {
     width: 160px;
     justify-content: center;
+    margin: 0rem;
 }
 }
 
@@ -328,7 +331,7 @@ audio {
     justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     #gifs {
         flex-direction: column;
         justify-content: center;
@@ -340,6 +343,7 @@ audio {
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
+    margin: 0rem;
 }
 
 .gifcaption {
@@ -351,7 +355,7 @@ audio {
 @media (max-width: 768px) {
 .gifcaption {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 1rem;
 }
 }
@@ -364,7 +368,7 @@ audio {
 
 @media (max-width: 768px) {
     .otherinfo {
-        font-size: 1rem;
+        font-size: 0.8rem;
         line-height: 1.5rem;
         padding-left: 3rem;
     }
@@ -392,7 +396,7 @@ audio {
 @media (max-width: 768px) {
     .whiteblock {
         margin: 2rem 1rem;
-        padding: 1rem 2rem;
+        padding: 1rem 1.7rem;
     }
 }
 
@@ -404,6 +408,7 @@ audio {
 @media (max-width: 768px) {
     #cvtextpic {
     flex-direction: column;
+    text-align: center;
 }
 }
 #profilepic img {
@@ -411,7 +416,12 @@ audio {
     max-width: 100%;
     border-radius: 1rem;
 }
-
+@media (max-width: 768px) {
+    #profilepic img {
+    height: auto;
+    max-width: 70%;
+}
+}
 /*The text*/
 #textprofile {
     font-size: 1.4rem;
@@ -420,7 +430,7 @@ audio {
 @media (max-width: 768px) {
     #textprofile {
     font-size: 1rem;
-    line-height:1.5;
+    line-height:1.5rem;
     }
 }
 
@@ -440,12 +450,12 @@ audio {
     border: solid 2px rgb(255, 157, 255);
     background-color: rgb(255, 157, 255);
     border-radius: 5px;
-    padding: 10px
+    padding: 1rem 1rem;
 }
 @media (max-width: 768px) {
     .topics {
     font-size: 1.1rem;
-    padding: 10px
+    padding: 1 rem 1rem;
 }
 }
 
@@ -543,7 +553,7 @@ audio {
 }
 @media (max-width: 768px) {
     .inputbox {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 0.3rem;
     text-align: left;
 }
@@ -569,6 +579,7 @@ audio {
     #message {
     width: 80%;
     padding: 0.5rem;
+    font-size: 0.8rem;
     }
 }
 #message:focus {
@@ -627,18 +638,17 @@ footer {
 .navfoot {
     display: inline-flex;
     justify-content: center;
-    padding: 3rem 1rem;
     text-decoration: none;
+    padding: 3rem 1rem;
     font-size: 1.5rem;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-shadow: 0.1rem 0.1rem purple;
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 768px) {
     .navfoot {
-        font-size: 1rem;
-        display: inline;
-        padding: 0 0.5rem;
+        font-size: 0.9rem;
+        padding: 0.5rem;
     }
 }
